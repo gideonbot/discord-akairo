@@ -169,6 +169,10 @@ declare module 'discord-akairo' {
         public ignoreCooldown?: Snowflake | Snowflake[] | IgnoreCheckPredicate;
         public ignorePermissions?: Snowflake | Snowflake[] | IgnoreCheckPredicate;
         public ownerOnly: boolean;
+        public voiceOnly: boolean;
+        public nsfw: boolean;
+        public allowedGuilds: string[]
+        public usage: string | any;
         public prefix?: string | string[] | PrefixSupplier;
         public ratelimit: number;
         public regex: RegExp | RegexSupplier;
